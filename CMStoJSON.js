@@ -10,9 +10,9 @@
         CMSItemChildren = CMSitems[i].children
         for (let i = 0; i < CMSItemChildren.length; i++) {
             CMSName = CMSItemChildren[i].id
-            CMSValue = CMSItemChildren[i].className
+            CMSValue = CMSItemChildren[i].innerHTML
 
-            console.log(CMSName,CMSValue)
+            document.getElementById("slides").innerHTML += CMSValue;
         }
     }
 </script>
